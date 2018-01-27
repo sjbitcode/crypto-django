@@ -108,3 +108,5 @@ venv.bak/
 
 # db
 *.sqlite3
+
+misc/
