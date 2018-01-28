@@ -1,0 +1,12 @@
+version: '2'
+services:
+    app:
+        restart: always
+        build: ./crypto
+        container_name: app
+        image: sjbitcode/crypto
+        ports:
+            - "8000:8000"
+        volumes:
+            - ./crypto:/app
+        command: python manage.py runserver 0.0.0.0:8000
