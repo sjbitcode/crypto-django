@@ -4,5 +4,5 @@ from . import views
 
 urlpatterns = [
 	path('', views.index, name='index'),
-	path('get-cryptos', views.get_cryptos, name='get-cryptos')
+	path('get-cryptos', views.CryptoView.as_view(), name='get-cryptos')
 ]
